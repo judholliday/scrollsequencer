@@ -1,0 +1,81 @@
+   
+#container {width:980px; margin:0 auto; }
+
+#main { margin:0; position:relative;}
+
+.floatingNav{
+    list-style: none;
+    position: fixed;
+    padding-left: 30px;
+    z-index:9999;
+    background-color: rgba(255, 255, 255, .6);
+    
+}
+
+.section {
+	position: relative;	
+}
+
+.ex-basic .section {
+	height: 500px;
+	width: 980px;
+	border: 1px solid red;
+	background-color: #999;
+}
+
+.ex-basic .section .content {
+	position: relative;
+}
+
+.ex-basic .section .bg {
+	position: absolute;
+	height: 100%;
+	width: 980px;
+}
+
+.ex-basic .section h3{
+	text-align: center;
+}
+
+.ex-basic a.scrollNow {
+	position: absolute;
+	bottom: 20px;
+	left: 45%;
+    background: url(../img/scroll-now.png) no-repeat 0 0;
+    width:128px;
+    height:75px; 
+}
+.ex-basic a.scrollNow:hover {
+    background-position: 0 -75px;
+}
+
+.ex-basic #section1 {
+	z-index: 3;	
+}
+.ex-basic #section2 {
+	z-index: 4;	
+}
+.ex-basic #section3 {
+	z-index: 2;	
+}
+.ex-basic #section4 {
+	z-index: 3;	
+}
+
+
+
+.ex-basic #section1 .bg {
+	background: transparent url(../img/bg-section1.jpg) no-repeat 0 0;
+	position:fixed;
+}
+.ex-basic #section2 .bg {
+	background: transparent url(../img/bg-section2.jpg) no-repeat 0 0;
+}
+.ex-basic #section3 .bg {
+	background: transparent url(../img/bg-section3.jpg) no-repeat 0 0;
+	position:fixed;
+	top:0;
+}
+.ex-basic #section4 .bg {
+	background: transparent url(../img/bg-section4.jpg) no-repeat 0 0;	
+}
